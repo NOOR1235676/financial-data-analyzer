@@ -25,7 +25,7 @@ def parse_arguments():
 
 def run_phase1(bank_file, ledger_file):
     """Phase 1: Basic Excel Processing"""
-    print("🔍 Phase 1: Basic Excel Processing")
+    print("Phase 1: Basic Excel Processing")
     print("-" * 40)
     
     analyzer = FinancialDataAnalyzer()
@@ -41,24 +41,24 @@ def run_phase1(bank_file, ledger_file):
     print("Analyzing data structure...")
     analyzer.analyze_data_structure()
     
-    print("✅ Phase 1 completed successfully!")
+    print("Phase 1 completed successfully!")
     return analyzer, bank_data, ledger_data
 
 def run_phase2(analyzer):
     """Phase 2: Advanced Transaction Parsing"""
-    print("\n⚡ Phase 2: Advanced Transaction Parsing")
+    print("\nPhase 2: Advanced Transaction Parsing")
     print("-" * 40)
     
     # Parse transactions
     print("Parsing transactions...")
     transactions = analyzer.parse_transactions()
     
-    print(f"✅ Phase 2 completed! Parsed {len(transactions)} transactions.")
+    print(f"Phase 2 completed! Parsed {len(transactions)} transactions.")
     return transactions
 
 def run_phase3(analyzer):
     """Phase 3: Data Reconciliation"""
-    print("\n🔍 Phase 3: Data Reconciliation")
+    print("\nPhase 3: Data Reconciliation")
     print("-" * 40)
     
     # Find matching transactions
@@ -73,12 +73,12 @@ def run_phase3(analyzer):
     print(f"Unmatched bank transactions: {len(unmatched_bank)}")
     print(f"Unmatched ledger transactions: {len(unmatched_ledger)}")
     
-    print("✅ Phase 3 completed successfully!")
+    print("Phase 3 completed successfully!")
     return reconciliation_results
 
 def run_phase4(analyzer, generate_report=False):
     """Phase 4: Complete Analysis with Reporting"""
-    print("\n🚀 Phase 4: Complete Analysis")
+    print("\nPhase 4: Complete Analysis")
     print("-" * 40)
     
     # Generate summary statistics
@@ -89,14 +89,14 @@ def run_phase4(analyzer, generate_report=False):
     print("Creating visualizations...")
     try:
         analyzer.create_visualizations("cli_charts")
-        print("📊 Visualizations saved to cli_charts/")
+        print("Visualizations saved to cli_charts/")
     except Exception as e:
         print(f"Warning: Visualization creation failed: {e}")
     
     # Export processed data
     print("Exporting processed data...")
     analyzer.export_processed_data("cli_processed_data.xlsx")
-    print("📋 Data exported to cli_processed_data.xlsx")
+    print("Data exported to cli_processed_data.xlsx")
     
     if generate_report:
         print("Generating comprehensive reports...")
@@ -113,16 +113,16 @@ def run_phase4(analyzer, generate_report=False):
             
             # Generate PDF report
             pdf_file = report_gen.generate_pdf_report(data, "cli_financial_report.pdf")
-            print(f"📄 PDF report generated: {pdf_file}")
+            print(f"PDF report generated: {pdf_file}")
             
             # Generate Excel report
             excel_file = report_gen.generate_excel_report(data, "cli_financial_report.xlsx")
-            print(f"📊 Excel report generated: {excel_file}")
+            print(f"Excel report generated: {excel_file}")
             
         except Exception as e:
             print(f"Warning: Report generation failed: {e}")
     
-    print("✅ Phase 4 completed successfully!")
+    print("Phase 4 completed successfully!")
 
 def phase_execution(phase, generate_report, bank_file, ledger_file):
     """Execute the specified phase"""
@@ -150,13 +150,13 @@ def phase_execution(phase, generate_report, bank_file, ledger_file):
             print("Example: python cli.py --phase 4 --report")
             
     except Exception as e:
-        print(f"❌ Error during phase execution: {e}")
+        print(f"Error during phase execution: {e}")
         return False
     
     return True
 
 def main():
-    print("🏦 FINANCIAL DATA PARSER CLI 💰")
+    print("FINANCIAL DATA PARSER CLI")
     print("=" * 50)
     
     args = parse_arguments()
@@ -164,9 +164,9 @@ def main():
     success = phase_execution(args.phase, args.report, args.bank_file, args.ledger_file)
     
     if success:
-        print("\n🎉 CLI execution completed successfully!")
+        print("\nCLI execution completed successfully!")
     else:
-        print("\n❌ CLI execution failed. Please check the errors above.")
+        print("\nCLI execution failed. Please check the errors above.")
 
 if __name__ == '__main__':
     main()
