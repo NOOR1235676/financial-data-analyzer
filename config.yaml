@@ -1,0 +1,45 @@
+# Financial Data Parser Configuration
+
+# File paths
+files:
+  bank_statement: "data/sample/KH_Bank.XLSX"
+  customer_ledger: "data/sample/Customer_Ledger_Entries_FULL.xlsx"
+
+# Output settings
+output:
+  reports_dir: "reports"
+  charts_dir: "charts"
+  logs_dir: "logs"
+
+# Reconciliation settings
+reconciliation:
+  date_tolerance_days: 3
+  amount_tolerance: 0.01
+  minimum_match_score: 50
+
+# Column mapping (optional overrides)
+column_mapping:
+  date_columns: ["date", "posting_date", "value_date"]
+  amount_columns: ["amount", "value", "sum"]
+  description_columns: ["description", "details", "memo"]
+
+# Processing settings
+processing:
+  chunk_size: 1000
+  enable_caching: true
+  parallel_processing: false
+
+# Email notifications (optional)
+email:
+  enabled: false
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  sender_email: ""
+  sender_password: ""
+  recipients: []
+
+# Database settings (optional)
+database:
+  enabled: false
+  type: "sqlite"
+  path: "financial_data.db"

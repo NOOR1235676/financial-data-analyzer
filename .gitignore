@@ -1,0 +1,95 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+financial_data_parser.log
+
+# Output Files
+*.xlsx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+!sample_data/*.xlsx
+reports/
+charts/
+visualizations/
+quick_charts/
+cli_charts/
+complete_analysis_charts/
+complete_reconciliation_report.xlsx
+complete_processed_data.xlsx
+quick_reconciliation_report.xlsx
+quick_processed_data.xlsx
+processed_financial_data.xlsx
+cli_processed_data.xlsx
+cli_financial_report.pdf
+cli_financial_report.xlsx
+
+# Sensitive Data
+config_local.yaml
+.env
+*.key
+*.secret
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+.coverage
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
