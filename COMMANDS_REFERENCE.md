@@ -1,40 +1,40 @@
 # 🏦 FINANCIAL DATA PARSER - COMPLETE COMMAND REFERENCE 💰
 
-## ✅ **ALL WORKING COMMANDS**
+##  **ALL WORKING COMMANDS**
 
-### **📋 Phase Testing Commands**
+### ** Phase Testing Commands**
 
 #### **Phase 1: Basic Excel Processing**
 ```bash
 python test_phase1.py
 ```
-- ✅ Tests basic Excel file reading
-- ✅ Analyzes data structure
-- ✅ Shows file information and column details
+-  Tests basic Excel file reading
+-  Analyzes data structure
+-  Shows file information and column details
 
 #### **Phase 2: Component Testing**
 ```bash
 python test_commands_phase1.py
 ```
-- ✅ Individual component tests
-- ✅ Pandas and OpenPyXL functionality
-- ✅ Memory usage assessment
+-  Individual component tests
+-  Pandas and OpenPyXL functionality
+-  Memory usage assessment
 
 #### **Phase 3: Quick Analysis**
 ```bash
 python quick_analysis.py
 ```
-- ✅ Complete automated analysis
-- ✅ Transaction parsing and reconciliation
-- ✅ Report generation
+-  Complete automated analysis
+-  Transaction parsing and reconciliation
+-  Report generation
 
 #### **Phase 4: Complete Analysis**
 ```bash
 python full_analysis.py
 ```
-- ✅ Full system integration
-- ✅ Advanced parsing and categorization
-- ✅ Professional reporting
+-  Full system integration
+-  Advanced parsing and categorization
+-  Professional reporting
 
 ### **🖥️ CLI Commands**
 
@@ -57,26 +57,26 @@ python cli.py --phase 4
 ```bash
 python cli.py --phase 4 --report
 ```
-- ✅ Runs all phases sequentially
-- ✅ Generates PDF and Excel reports
-- ✅ Creates visualizations
-- ✅ Exports processed data
+-  Runs all phases sequentially
+-  Generates PDF and Excel reports
+-  Creates visualizations
+-  Exports processed data
 
 #### **Custom File Paths**
 ```bash
 python cli.py --phase 4 --bank-file "path/to/bank.xlsx" --ledger-file "path/to/ledger.xlsx"
 ```
 
-### **📊 Interactive Dashboard**
+### ** Interactive Dashboard**
 
 #### **Launch Streamlit Dashboard**
 ```bash
 streamlit run dashboard.py
 ```
-- ✅ Interactive web interface
-- ✅ Real-time data visualization
-- ✅ Multiple analysis views
-- ✅ Export capabilities
+-  Interactive web interface
+-  Real-time data visualization
+-  Multiple analysis views
+-  Export capabilities
 
 #### **Dashboard with Custom Port**
 ```bash
@@ -89,19 +89,19 @@ streamlit run dashboard.py --server.port 8503
 ```bash
 python main.py
 ```
-- ✅ Menu-driven interface
-- ✅ Step-by-step execution
-- ✅ User-friendly prompts
+-  Menu-driven interface
+-  Step-by-step execution
+-  User-friendly prompts
 
 #### **Quick Commands Menu**
 ```bash  
 python run_commands.py
 ```
-- ✅ Batch execution options
-- ✅ All commands in one place
-- ✅ Easy selection interface
+-  Batch execution options
+-  All commands in one place
+-  Easy selection interface
 
-## 🎯 **RECOMMENDED WORKFLOW**
+##  **RECOMMENDED WORKFLOW**
 
 ### **For Quick Testing:**
 1. `python test_phase1.py` - Verify file access
@@ -115,7 +115,7 @@ python run_commands.py
 1. `python main.py` - Menu-driven experience
 2. `python run_commands.py` - Quick command selection
 
-## 📁 **Generated Files**
+##  **Generated Files**
 
 After running complete analysis, you'll get:
 
@@ -147,16 +147,16 @@ Ensure all dependencies are installed:
 pip install -r requirements.txt
 ```
 
-## 🚀 **All Systems Working!**
+##  **All Systems Working!**
 
-✅ **Phase 1-4 Testing** - Complete  
-✅ **CLI Interface** - Functional  
-✅ **Streamlit Dashboard** - Interactive  
-✅ **Report Generation** - PDF & Excel  
-✅ **Data Visualization** - Charts & Graphs  
-✅ **Configuration** - YAML-based  
-✅ **Error Handling** - Production-ready  
+ **Phase 1-4 Testing** - Complete  
+ **CLI Interface** - Functional  
+ **Streamlit Dashboard** - Interactive  
+ **Report Generation** - PDF & Excel  
+ **Data Visualization** - Charts & Graphs  
+ **Configuration** - YAML-based  
+ **Error Handling** - Production-ready  
 
 ---
 
-**Happy Analyzing! 📊💰**
+**Happy Analyzing! **

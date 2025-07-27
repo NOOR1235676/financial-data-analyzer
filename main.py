@@ -29,7 +29,7 @@ def main():
     analyzer = FinancialDataAnalyzer()
     
     # Define file paths
-    bank_file = Path("data/sample/KH_Bank.XLSX")
+    bank_file = Path("data/sample/KH_Bank.xlsx")
     ledger_file = Path("data/sample/Customer_Ledger_Entries_FULL.xlsx")
     
     # Check if files exist

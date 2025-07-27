@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Financial Data Analysis Dashboard
-Streamlit-based interactive dashboard with comprehensive visualizations
+Enhanced Streamlit-based interactive dashboard with comprehensive visualizations
 """
 
 import streamlit as st
@@ -16,14 +16,21 @@ import sys
 from pathlib import Path
 from datetime import datetime, timedelta
 import warnings
+import io
+import base64
 warnings.filterwarnings('ignore')
 
 # Add src directory to path
 sys.path.append(str(Path(__file__).parent / "src"))
 
-from financial_analyzer import FinancialDataAnalyzer
-from phase2_parser import AdvancedTransactionParser
-from phase3_reconciler import DataReconciler
+try:
+    from financial_analyzer import FinancialDataAnalyzer
+    from phase2_parser import AdvancedTransactionParser
+    from phase3_reconciler import DataReconciler
+except ImportError as e:
+    st.error(f"Import error: {e}")
+    st.error("Please ensure all required modules are available in the src directory.")
+    st.stop()
 
 # Page configuration
 st.set_page_config(
